@@ -1,0 +1,463 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Rubik', sans-serif;
+	font-size: 16px;
+}
+
+/*----------------Estilo cabecera-------------------------*/
+
+.cabecera{
+	position: relative;
+	width: 100%;
+	max-width: 2250px;
+	height: 100vh;
+	background-color: #ff90b3;
+	background-image: url('assets/images/bg.jpg');
+	background-size:cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin: auto;
+}
+
+
+.logo{
+
+	width:196px;
+	height:128px;
+}
+
+.superior{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 10px 20px;
+}
+
+
+.menu{
+
+
+}
+
+.menu a{
+	margin: 0 15px;
+	text-decoration: none;
+	color: #fff;
+	font-size: 1.1em;
+}
+
+.menu a:hover{
+
+	text-decoration: underline;
+}
+
+.slogan{
+	font-family: 'Indie Flower', cursive;
+	color: #fff;
+	font-size: 5em;
+	width: 30%;
+	position: absolute;
+	left: 55%;
+	top: 30%;
+}
+
+
+
+
+/* ****************** estilo main************************** */
+
+/*----------------- sobre nosotros---------------------------*/
+
+main{
+	background-color: #A9FFF7;
+	width: 100%;
+	height: auto;
+}
+
+.nosotros{
+	width: 100%;
+	height: auto;
+	padding:162px 0 90px;
+}
+.contenedor{
+
+	width: 80%;
+	background-color: #A9FFF7;
+	margin: auto;
+}
+
+.contenedorNosotros{
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.left{
+
+	width: 40%;
+	min-height:1000px;
+	height: auto;
+	background-color: #FCFC62;
+	position:relative;
+}
+
+.left img{
+	position: absolute;
+	left: 15%;
+	top: 10%;
+	width: 100%;
+}
+
+.right{
+
+	width: 40%;
+	min-height: 500px;
+	height: auto;
+	background-color: #575D90;
+	padding: 30px;
+	color: #fff;
+	text-align: center;
+}
+
+
+.right h4{
+
+	font-size: 2.5em;
+	margin-bottom: 30px;
+	
+}
+
+
+.right p {
+
+	font-size: 1.5em;
+	padding: 15px;
+	line-height: 1.5;
+}
+
+/*-----------------Estilos productos---------------*/
+
+.productos{
+
+	width: 100%;
+	background-color: #6461A0;
+	padding: 80px 0 120px;
+
+}
+
+.productos h3{
+	font-size: 2.5em;
+	color: #fff;
+	text-align: center;
+}
+
+.contenedorProductos{
+
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding: 0 20px;
+
+}
+
+.card{
+
+	width: 20%;
+	height: auto;
+	position: relative;
+}
+
+.card img{
+
+	width: 100%;
+}
+
+.caracteristica{
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 0 20px;
+	width: 100%;
+	height: 0;
+	opacity: 0;
+	transition: 1.2s;
+	background-color: rgb(83 19 30 / 53%);
+	text-align: center;
+}
+
+.caracteristica p:nth-child(1){
+
+	color: #fff;
+	font-weight: bold;
+	margin-bottom: 20px;
+	font-size: 1.6em;
+}
+
+.caracteristica p:nth-child(2){
+
+	color: #fff;
+	font-size: 1.3em;
+}
+
+.card:hover .caracteristica{
+
+	height:100%;
+	opacity: 1;
+}
+
+
+/************* Estilos footer **************************/
+footer{
+	background-color: #062726;
+	padding: 50px 0 0;
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+	align-items: center;
+}
+
+.redes{
+	margin: auto;
+	display: flex;
+	width: 15%;
+	justify-content: space-between;
+	flex-direction: row;
+	padding-bottom:80px ;
+}
+
+.redes a{
+	color: #fff;
+	font-size: 1.8em;
+	opacity: 0.5;
+}
+
+.redes a:hover{
+	opacity: 1;
+}
+
+footer > p{
+
+	color: #fff;
+	padding-bottom: 5px;
+}
+
+
+/*------------- Media query ------------------------*/
+
+
+
+
+@media (max-width: 1400px) {
+
+	.left img{
+		position: absolute;
+		left: 15%;
+		top: 10%;
+		width: 100%;
+	}
+
+ }
+
+
+@media (max-width: 1200px) {
+
+	.contenedorNosotros{
+
+		align-items:center;
+	}
+}
+
+
+@media (max-width: 800px) {
+
+	.slogan{
+		font-family: 'Indie Flower', cursive;
+		text-align: center;
+		color: #fff;
+		font-size: 5em;
+		width: 90%;
+		position: absolute;
+		left:5%;
+		top: 20%;
+	}	
+
+	.menu{
+
+		width: 95%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.menu a{
+
+		margin: 10px 0;
+	}
+
+
+	.contenedorNosotros{
+
+		display: flex;
+		flex-direction:column;
+		justify-content: center;
+		align-items:center;
+	}
+
+	.left{
+
+		width: 80%;
+		height: auto;
+		background-color: #FCFC62;
+}
+
+	.left img{
+		width: 100%;
+	}
+
+	.right{
+
+		width: 80%;
+		height: auto;
+		background-color: #575D90;
+		padding: 30px;
+		color: #fff;
+		text-align: center;
+		margin: 20px 0;
+	}
+
+
+
+	.contenedorProductos{
+
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		flex-direction: row;
+		flex-wrap: wrap;
+		padding: 0 20px;
+
+	}
+
+	.card{
+
+		width: 40%;
+		height: auto;
+		position: relative;
+	}
+
+	.redes{
+		width: 80%;
+	}
+
+
+}
+
+
+@media (max-width: 768px) { 
+
+	.slogan{
+		font-size: 3em;
+		width: 90%;
+		position: static;
+		text-align: center;
+	}
+
+ }
+
+@media (max-width: 576px) { 
+
+	.slogan{
+		font-size: 3em;
+		width: 90%;
+		position: static;
+		text-align: center;
+	}
+
+	.left{
+
+		width: 95%;
+	}
+
+	.left img{
+		width: 100%;
+		position: static;
+	}
+
+	.right{
+
+		width: 99%;
+	}
+
+	.cabecera {
+
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+	}
+
+	.right h4{
+
+		font-size: 1.5em;
+		margin-bottom: 30px;
+	
+	}
+
+	.contenedor{
+
+		width: 90%;
+	}
+
+
+	.right p {
+
+		font-size: 1.2em;
+		padding: 15px;
+		line-height: 1.5;
+	}
+
+
+	.card{
+
+		width: 80%;
+		height: auto;
+		position: relative;
+	}
+
+
+ }
+
+
+ @media (max-width: 300px){
+
+
+	.caracteristica p:nth-child(1){
+
+		color: #fff;
+		font-weight: bold;
+		margin-bottom: 20px;
+		font-size: 1.3em;
+	}
+
+	.caracteristica p:nth-child(2){
+
+		color: #fff;
+		font-size: 1.15em;
+}
+
+
+ }
